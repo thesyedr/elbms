@@ -56,9 +56,7 @@
 			<artifactId>javax.servlet-api</artifactId>
 			<version>3.0.1</version>
 			<scope>provided</scope>
-		</dependency>
-		
-		
+		</dependency>	
 		
 	</dependencies>
 
@@ -70,6 +68,7 @@
 		</repository>
 	</repositories>
 
+<!-- Build configuration details -->
 	<build>
 		<finalName>springebms</finalName>
 		<plugins>
