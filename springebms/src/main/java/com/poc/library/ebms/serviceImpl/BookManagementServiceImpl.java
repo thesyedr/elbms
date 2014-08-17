@@ -2,15 +2,30 @@ package com.poc.library.ebms.serviceImpl;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.poc.library.ebms.dao.BookManagementDao;
 import com.poc.library.ebms.model.Book;
 import com.poc.library.ebms.service.BookManagementService;
 
+@Service
 public class BookManagementServiceImpl implements BookManagementService{
+	
+	@Autowired
+	private BookManagementDao daoService;
+	public BookManagementDao getDaoService() {
+		return daoService;
+	}
+
+	public void setDaoService(BookManagementDao daoService) {
+		this.daoService = daoService;
+	}
 
 	@Override
 	public boolean insertBookDetails(Book book) {
-		// TODO Auto-generated method stub
-		return false;
+		System.out.println(":: insert service  ::");
+		return daoService.insert(book);
 	}
 
 	@Override
