@@ -2,14 +2,17 @@ package com.poc.library.ebms.daoImpl;
 
 import java.util.List;
 
+import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.poc.library.ebms.dao.BookManagementDao;
 import com.poc.library.ebms.model.Book;
 
 @Repository
+@Transactional
 public class BookManagementDaoImpl implements BookManagementDao{
 	
 	@Autowired
@@ -43,14 +46,17 @@ public class BookManagementDaoImpl implements BookManagementDao{
 
 	@Override
 	public Book fetch(int book_id) {
-		// TODO Auto-generated method stub
+		
 		return null;
 	}
 
 	@Override
-	public List<Book> getBooks(String category, String publisher) {
-		// TODO Auto-generated method stub
-		return null;
+	@SuppressWarnings("unchecked")
+	public List<Book> getBooks(String category) {
+		
+		Session session = sessionFactory.getCurrentSession();		
+		List<Book> list = session.createQuery("from Book b where b.book_category = :category").setParameter("category", category).list();
+		return list;
 	}
 
 }

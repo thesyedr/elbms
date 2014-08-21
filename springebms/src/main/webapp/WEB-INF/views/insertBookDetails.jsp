@@ -7,6 +7,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Registration</title>
+
 </head>
 <body>
 	<div align="center">
@@ -35,7 +36,14 @@
 					<td>Birthday (mm/dd/yyyy):</td>
 					<td><form:input path="book_arrival_date" /></td>
 				</tr>
-				
+				<tr>
+					<td>Price of the Book : </td>
+					<td><form:input path="book_price" /></td>
+				</tr>
+				<tr>
+					<td>Category:</td>
+					<td><form:input path="book_category" /></td>
+				</tr>
 				
 				<tr>
 					<td colspan="2" align="center"><input type="submit" value="Submit" /></td>

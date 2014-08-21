@@ -6,8 +6,11 @@ public class User {
 	private String username;
 	private String password;
 	private String email;
-	private Date birthDate;
-	private String profession;
+	private String first_name;
+	private String last_name;	
+	private Date dateofbirth;
+	private long phone;
+	private String gender;
 
 	public String getUsername() {
 		return username;
@@ -33,20 +36,45 @@ public class User {
 		this.email = email;
 	}
 
-	public Date getBirthDate() {
-		return birthDate;
+	public String getFirst_name() {
+		return first_name;
 	}
 
-	public void setBirthDate(Date birthDate) {
-		this.birthDate = birthDate;
+	public void setFirst_name(String first_name) {
+		this.first_name = first_name;
 	}
 
-	public String getProfession() {
-		return profession;
+	public String getLast_name() {
+		return last_name;
 	}
 
-	public void setProfession(String profession) {
-		this.profession = profession;
+	public void setLast_name(String last_name) {
+		this.last_name = last_name;
 	}
 
+	public Date getDateofbirth() {
+		return dateofbirth;
+	}
+
+	public void setDateofbirth(Date dateofbirth) {
+		this.dateofbirth = dateofbirth;
+	}
+
+	public long getPhone() {
+		return phone;
+	}
+
+	public void setPhone(long phone) {
+		this.phone = phone;
+	}
+
+	public String getGender() {
+		return gender;
+	}
+
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+
+	
 }

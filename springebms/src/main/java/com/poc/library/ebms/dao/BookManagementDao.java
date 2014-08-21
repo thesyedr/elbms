@@ -10,7 +10,7 @@ public interface BookManagementDao {
 	public boolean update();
 	public boolean deleteBookDetails();
 	public Book fetch(int book_id);
-	public List<Book> getBooks(String category,String publisher);
+	public List<Book> getBooks(String category);
 
 
 }

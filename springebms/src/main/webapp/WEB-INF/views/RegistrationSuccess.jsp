@@ -29,11 +29,11 @@
 			</tr>
 			<tr>
 				<td>Birthday:</td>
-				<td>${userForm.birthDate}</td>
+				<td>${userForm.dateofbirth}</td>
 			</tr>
 			<tr>
 				<td>Profession:</td>
-				<td>${userForm.profession}</td>
+				<td>${userForm.gender}</td>
 			</tr>
 
 		</table>

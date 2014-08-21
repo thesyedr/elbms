@@ -10,6 +10,6 @@ public interface BookManagementService {
 	public boolean updateBookDetails();
 	public boolean deleteBookDetails();
 	public Book fetchBookDetails(int book_id);
-	public List<Book> getBooks(String category,String publisher);
+	public List<Book> getBooks(String category);
 
 }

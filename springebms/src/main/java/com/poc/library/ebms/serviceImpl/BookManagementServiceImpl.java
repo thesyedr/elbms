@@ -47,9 +47,10 @@ public class BookManagementServiceImpl implements BookManagementService{
 	}
 
 	@Override
-	public List<Book> getBooks(String category, String publisher) {
-		// TODO Auto-generated method stub
-		return null;
+	public List<Book> getBooks(String category) {
+		
+		System.out.println("=======Inside getBooks Service============s");
+		return daoService.getBooks(category);
 	}
 
 }

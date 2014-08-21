@@ -23,10 +23,10 @@ public class RegisterController {
 		model.put("userForm", userForm);
 		
 		List<String> professionList = new ArrayList<>();
-		professionList.add("Developer");
-		professionList.add("Designer");
-		professionList.add("IT Manager");
-		model.put("professionList", professionList);
+		professionList.add("Select");
+		professionList.add("Male");
+		professionList.add("Female");
+		model.put("genderList", professionList);
 		
 		return "Registration";
 	}
@@ -41,8 +41,7 @@ public class RegisterController {
 		System.out.println("username: " + user.getUsername());
 		System.out.println("password: " + user.getPassword());
 		System.out.println("email: " + user.getEmail());
-		System.out.println("birth date: " + user.getBirthDate());
-		System.out.println("profession: " + user.getProfession());
+		
 		
 		return "RegistrationSuccess";
 	}
