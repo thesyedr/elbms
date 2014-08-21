@@ -18,7 +18,7 @@ import com.poc.library.ebms.service.BookManagementService;
 
 @Controller
 @RequestMapping(value="/bms")
-public class BookManagementController {
+public class BookManagementController {	
 	
 	@Autowired
 	private BookManagementService bookService;
@@ -30,7 +30,7 @@ public class BookManagementController {
 	public void setBookService(BookManagementService bookService) {
 		this.bookService = bookService;
 	}
-
+	//insert server
 	@RequestMapping(value="/insert",method = RequestMethod.GET)
 	public String getBookForm(@ModelAttribute("bookForm") Book bookForm, 
 			Map<String, Object> model) {	

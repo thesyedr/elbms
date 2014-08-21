@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.poc.library.ebms.model.Book;
 
+//book management dao 
 public interface BookManagementDao {
 	
 	public boolean insert(Book book);
