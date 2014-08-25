@@ -5,11 +5,11 @@
 	"http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="<%=request.getContextPath() %>\resources\css\bootstrap.min.css">
+<link rel="stylesheet" href="<%=request.getContextPath() %>\resources\css\bootstrap-theme.min.css">
+<script src="<%=request.getContextPath() %>\resources\js\jquery.min.js"></script>
+<script src="<%=request.getContextPath() %>\resources\js\bootstrap.min.js"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <style type="text/css">
     h1{
         margin: 30px 0;
@@ -22,7 +22,9 @@
 </style>
 <title>Registration</title>
 </head>
+<img src="..." alt="..." class="img-rounded">
 <body>
+
 	<div class="bs-example">
 			<h1>Sign Up</h1>
 				<form:form class="form-horizontal" action="post" method="post" commandName="userForm" >
